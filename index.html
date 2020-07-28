@@ -12,29 +12,30 @@
 <body style="background-color: darkorange; margin:0;">
 
     <nav class="nav flex-column navbar-expand-lg shadow-lg  navbar-light bg-light">
+        
         <div class="row">
-            <div class="col-2">
+            <div class="col-sm">
                 <a class="navbar-brand  pl-3 " >Selection Area</a>
             </div>
-            <div class="col-1">
+            <div class="col-sm">
                 <span class="navbar-text">
                     Country
                   </span>
             </div>
-            <div class="col-2">
+            <div class="col-sm">
                 <select class="custom-select custom-select-sm" style="margin-top: 2%;" id="country_selector" >
                     
         
                 </select>
                 
             </div>
-            <div class="col-1">
+            <div class="col-sm">
                 <span class="navbar-text">
                     Graph
                   </span>
 
             </div>
-            <div class="col-2">
+            <div class="col-sm">
             
                 
             <select class="custom-select custom-select-sm" style="margin-top: 2%;" id="graph_selector">
@@ -46,14 +47,14 @@
             </select>
                 
             </div>
-            <div class="col-2">
+            <div class="col-sm">
                 <select class="custom-select custom-select-sm" style="margin-top: 2%;" id="hist_selector">
                     <option class='text-white bg-dark'>Cumulative</option>
                     <option class='text-white bg-dark'>Daily</option>
                 </select>
                 
             </div>
-            <div class="col-1">
+            <div class="col-sm">
                 <button  class="btn btn-success"id="btn3">Search</button>
                 
             </div>
@@ -67,7 +68,7 @@
       
 
         <div class="row">
-            <div class="col-4 shadow-lg p-3 mb-5 bg-white rounded" id= "summary_choice" style="margin: 2.5%;">
+            <div class="col-lg-4 shadow-lg p-3 mb-5 bg-white rounded" id= "summary_choice" style="margin: 2.5%;">
 
         
                 <div class="container">
@@ -98,7 +99,8 @@
 
           
 
-            <div class="col-6 shadow-lg p-0 mb-5 bg-white rounded" id= "graph_container" style="margin: 2.5%;">
+            <div class="col-lg-6 shadow-lg p-0 mb-5 bg-white rounded" id= "graph_container" style="margin: 2.5%;">
+                
                 <div class="card mt-0">
                     <div class="card-body">
                         <canvas id="myCanvas" class="container"></canvas>
@@ -552,4 +554,3 @@ $(document).ready(function(){
     
 </body>
 </html>
-
